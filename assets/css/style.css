@@ -209,7 +209,12 @@ margin: 30px auto ;
 .section{
     padding: 80px;
 }
+
+.section--gray{
+    background-color: #e8e8e8;
+}
 .section--devices{
+    margin-bottom: 40px;
     padding-bottom: 0;
     background:url(../images/devices-bg.jpg)
     center no-repeat;
@@ -404,5 +409,151 @@ Devices */
 
 }
 
+/* wedo */
 
-    
+.wedo{
+    display: flex;
+}
+
+.wedo__item{
+    width: 50%;
+}
+
+/* Accordion */
+
+.accordion__item{
+    border:1px solid #e5e5e5;
+    margin-bottom:10px;
+}
+
+.accordion__item.active
+.accordion__content {
+    border-bottom-color: #e5e5e5;
+}
+
+.accordion__item.active
+.accordion__content {
+    display: block;
+}
+
+.accordion__item.active
+.accordion__header::after{
+    transform: translateY(-50%) rotate(-45deg);
+    margin-top:5px;
+}
+
+.accordion__header{
+    padding: 15px 20px 15px 60px;
+    position: relative;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+}
+
+
+
+
+.accordion__header::after{
+    content:"";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-top:2px solid #ccc;
+    border-right:2px solid #ccc;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    z-index: 1;
+    transform: translateY(-50%) rotate(135deg)
+}
+.accordion__icon{
+    position: absolute;
+    left:20px;
+    top:50%;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.accordion__content{
+    display: none;
+    padding: 15px 20px;
+    font-size: 15px;
+    color:#999;
+    font-weight:300;
+}
+
+.accordion__title{
+    font-size: 14px;
+    color:#333;
+    text-transform: uppercase;
+
+}
+
+/* reviews */
+
+.reviews{
+    padding: 0 110px;
+    position: relative;
+}
+
+.reviews__item{
+    padding-left: 205px;
+    position: relative;
+}
+
+.reviews__photo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border:2px solid #95e1d3;
+}
+
+.reviews__text{
+    font-size: 24px;
+    font-weight: 300;
+    color:#999;
+    margin-bottom: 15px;
+}
+
+.reviews__author{
+    font-size: 24px;
+    color:black;
+    font-family: 'Kaushan Script',cursive;
+}
+
+.reviews__author::before{
+    content:"";
+    display: inline-block;
+    vertical-align: middle ;
+    width: 60px;
+    height:3px;
+    background-color: #f38181;
+    margin-right: 10px;
+}
+
+.reviews__btn{
+    font-size: 0;
+    color:transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.reviews__btn::after{
+    content:"";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-top:2px solid #ccc;
+    border-left:2px solid #ccc;
+    transform:rotate(-45deg)
+}
+
+.reviews__btn--prev{
+    left: 0;
+}
+
+.reviews__btn--next{
+    right: 0;
+    transform:rotate(180deg)
+}
