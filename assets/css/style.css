@@ -266,6 +266,10 @@ margin: 30px auto ;
 
 .about__item {
     width: 380px;
+   
+}
+
+.about__inner{
     position: relative;
 
     background-color: #95e1d3;
@@ -311,6 +315,24 @@ margin: 30px auto ;
     transform: translate3d(0, -50%, 0);
 
     transition: opacity .2s linear;
+}
+
+.about__info{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.about__name{
+    margin-bottom: 5px;
+    font-size: 14px;
+    color:#333;
+    text-transform: uppercase;
+}
+
+.about__prof{
+    font-weight: 300;
+    font-size: 15px;
+    color:#999
 }
 
 /* statistics */
@@ -556,4 +578,45 @@ Devices */
 .reviews__btn--next{
     right: 0;
     transform:rotate(180deg)
+}
+/* 
+social */
+
+.social{
+    display: flex;
+    justify-content: center;
+}
+
+.social__item{
+    width: 55px;
+    height: 55px;
+    border-right:1px solid #f38181;
+    background-color: #fce38a;
+    padding:12px 10px;
+    font-size: 30px;
+    text-transform: none;
+    line-height: 1;
+    color:#f38181;
+    transition: background .1s linear,
+     color .1s linear;
+    
+}
+
+.social__item:last-child{
+    border-right:none;
+}
+
+.social__item:hover{
+    color: white;
+    background-color: #f38181;
+}
+
+/* logos */
+
+.logos{
+    display: flex;
+    justify-content: space-between;
+}
+.logos__item{
+
 }
