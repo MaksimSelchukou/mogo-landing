@@ -227,6 +227,11 @@ margin: 30px auto ;
     background-size: cover;
 }
 
+.section--map{
+    padding: 40px 0;
+    background-color:#999;
+}
+
 .section__header{
     width: 100%;
     max-width: 950px;
@@ -822,4 +827,36 @@ social */
 
 .blog-stat__item i{
     color:#95e1d3;
+}
+
+/* MAP */
+
+.map{
+    text-align: center;
+}
+
+.map__title{
+    font-size: 24px;
+    color:#f38181;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.map__title::after{
+    content: "";
+    display: block;
+    margin: 15px auto 0;
+    width: 60px;
+    height: 3px;
+    background-color:#f38181;
+}
+
+.map__title a {
+    text-decoration: none;
+    color:#f38181;
+}
+
+.map__title a:hover {
+    text-decoration: underline;
 }
